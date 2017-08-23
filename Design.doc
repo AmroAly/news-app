@@ -1,0 +1,15 @@
+In this App i've used Laravel Framework which uses the following design patterns:
+1. Builder pattern
+2. Factory pattern
+3. Repository pattern
+4. Strategy pattern
+5. Provider pattern
+6. Facade Pattern
+
+However i've made use of the vue component that comes with laravel to serve it as Single Page Application SPA So i have only one route and multiple components.
+
+The technologies used in this project:
+- PHP7
+- Laravel
+- mysql
+- VueJS

@@ -1,0 +1,226 @@
+// Materialize css
+@import "node_modules/materialize-css/dist/css/materialize";
+@import "node_modules/material-icons/css/material-icons";
+
+.container {
+    .row {
+        // position: sticky;
+    }
+    .nav-wrapper {
+        .brand-logo {
+            margin-left: 10px;
+        }
+        ul {
+            margin-right: 10px;
+            li a:hover {
+                background: none;
+            }
+        }
+    }
+    .register, .login {
+        margin-top: 20px;
+        form {
+            h4 {
+                text-align: center;
+                color: #fff;
+            }
+            label, input {
+                color: #fff;
+            }
+        }
+        button {
+            width: 100%;
+        }
+    }
+}
+
+.flash {
+    width: 200px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    padding: 20px;
+    top: 0px;
+    color: #fff;
+    border-radius: 2px;
+    height: auto;
+    animation: slide-in  .5s forwards;
+    transition: all .5s;
+    z-index: 1;
+    &-success {
+        background: #6fca85;
+        border: 1px solid #6fb36f;
+    }
+    &-error {
+        background: #bf3b3b;
+    }
+}
+
+@keyframes slide-in {
+    form {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}
+
+.notfound-heading {
+    color: #c84f4f;
+}
+
+.error-control {
+    color: #ff8c8c;
+    position: absolute;
+    margin-top: -14px;
+    font-size: 80% !important;
+}
+
+.progress {
+    margin: 0 !important;
+    // position: absolute;
+    .indeterminate {
+        transition: 5s;
+    }
+}
+
+.verified {
+    h6 {
+        color: #fff;
+    }
+}
+
+.left-div, .right-div {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    position: -webkit-sticky;  // required for Safari
+    position: sticky;
+    top: 0;
+    a.feed-icon {
+        color: #fff;
+        margin: 10px;
+    }
+}
+
+.right-div {
+    .btn {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        &-large {
+            letter-spacing: 0;
+            overflow: hidden;
+        }
+    }
+}
+
+.center-div {
+    min-height: 400px !important;
+    .card {
+        margin-top: 0px;
+        cursor: pointer;
+        .card-content {
+            position: relative;
+            p {
+                margin-top: 5px;
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.65);
+            }
+            .post-info {
+                position: absolute;
+                color: #777777;
+                font-style: italic;
+                top: 5px;
+            }
+        }
+        .card-image {
+            overflow: hidden;
+            position: relative;
+            img {
+                transition: all 0.3s;
+            }
+            .card-title {
+                background: #000;
+                opacity: 0.5;
+                width: 100%;
+            }
+        }
+        .card-image img:hover {
+            background: #000;
+            opacity: 0.5;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.not-found-div {
+    min-height: 400px !important;
+}
+
+.create-post {
+    form {
+        margin-bottom: 20px;
+        label {
+            font-size: 1rem;
+        }
+        .image {
+            &-upload {
+                input[type="file"] {
+                    display: none;
+                }
+                i {
+                    position: absolute;
+                    // font-size: 35px;
+                    cursor: pointer;
+                }
+                label {
+                    padding: 100px 100px;
+                    cursor: pointer;
+                }
+                height: 257px;
+                background: #fafafa;
+                border: 1px dashed rgba(0, 0, 0, 0.1);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &-preview {
+                img {
+                    max-width: 100%;
+                }
+                position: relative;
+                text-align: center;
+                border: 1px dashed #ccc;
+            }
+            &-close {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            margin-bottom: 20px;
+        }
+    }
+}
+
+i {
+    position: absolute;
+}
+
+.footer {
+    margin-bottom: 0;
+}
+
+// Media queries
+@media only screen and (max-width: 600px) {
+    .row.index {
+        position: relative;
+    }
+    .left-div {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .container {
+        width: 90%;
+    }
+}
