@@ -3186,11 +3186,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "to": "/"
     }
-  }, [_vm._v("Home")])], 1), _vm._v(" "), _c('li', [_c('router-link', {
+  }, [_vm._v("Home")])], 1), _vm._v(" "), (_vm.check) ? _c('li', [_c('router-link', {
     attrs: {
       "to": ("/users/" + (_vm.auth.user_id) + "/news")
     }
-  }, [_vm._v("Your Published News")])], 1)])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("Your Published News")])], 1) : _vm._e()])]), _vm._v(" "), _c('div', {
     staticClass: "col m6 s12 center-div"
   }, [_vm._l((_vm.news), function(post) {
     return (_vm.news.length) ? _c('div', {

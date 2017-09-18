@@ -3,7 +3,7 @@
         <div class="col m3 s12 left-div">
             <ul class="sidenav">
               <li><router-link to="/">Home</router-link></li>
-               <li><router-link :to="`/users/${auth.user_id}/news`">Your Published News</router-link></li>
+               <li v-if="check"><router-link :to="`/users/${auth.user_id}/news`">Your Published News</router-link></li>
             </ul>
         </div>
         <div class="col m6 s12 center-div">
